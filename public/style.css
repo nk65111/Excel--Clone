@@ -1,0 +1,253 @@
+:root {
+    --border-color: #F8F9FA;
+    --cell-border-color: #C3C5C7;
+    --cell-selected: #dcdde1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+}
+
+.menu {
+    height: 30px;
+    display: flex;
+    background: #ecf0f1;
+}
+
+.menu-option {
+    border-bottom: 1px solid var(--cell-border-color);
+    height: 38px;
+}
+
+.address-content {
+    border-bottom: 1px solid var(--cell-border-color);
+    height: 30px;
+    display: flex;
+}
+
+.cells-content {
+    height: calc(100vh - 98px);
+    overflow: auto;
+    position: relative;
+}
+
+.sheets {
+    height: 30px;
+    display: flex;
+    background: #ecf0f1;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    border-left: 1px solid var(--cell-border-color);
+    border-top: 1px solid var(--cell-border-color);
+    min-height: 21px;
+    min-width: 8rem;
+    outline: none;
+}
+
+.top-left-content {
+    height: 21px;
+    width: 30px;
+    background: var(--border-color);
+    position: absolute;
+    z-index: 3;
+}
+
+.top-content {
+    display: flex;
+    position: absolute;
+    left: 30px;
+    background: var(--border-color);
+    z-index: 2;
+}
+
+.top-cell {
+    border-left: 1px solid var(--cell-border-color);
+    min-height: 21px;
+    min-width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-content {
+    width: 30px;
+    position: absolute;
+    top: 21px;
+    background: var(--border-color);
+    z-index: 2;
+}
+
+.left-cell {
+    border-top: 1px solid var(--cell-border-color);
+    width: 30px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cells {
+    position: absolute;
+    left: 30px;
+    top: 21px;
+}
+
+.add-sheet {
+    height: 100%;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px lightgray solid;
+}
+
+.add-sheet .fas {
+    color: #2ecc71;
+}
+
+.sheet-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.sheet {
+    border-right: 1px lightgray solid;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.active-sheet {
+    background: white;
+    font-weight: bold;
+}
+
+.menu div {
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.file {
+}
+
+.home {
+}
+
+.file-option {
+}
+
+.home-option {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.active-menu {
+    background: white;
+    font-weight: bold;
+}
+
+.hide {
+    display: none;
+}
+
+.font-style {
+    display: flex;
+    width: 150px;
+    height: 60%;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 1px solid lightgray;
+}
+
+.font-style div {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.font-size {
+    width: 200px;
+}
+
+.font-size select {
+    background: #efefef;
+    border-radius: 5px;
+    height: 100%;
+    outline: none;
+}
+
+.font-type {
+    width: 119px;
+}
+
+.font-text-size {
+    width: 50px;
+}
+
+.font-style div:hover {
+    background-color: lightgray;
+    opacity: 0.5;
+}
+
+.active-style {
+    background: lightgray;
+}
+
+#addressid {
+    width: 71px;
+    text-align: center;
+    border: none;
+    border-right: 1px solid lightgray;
+}
+
+#formulaid {
+    border: none;
+    width: 100%;
+    outline: none;
+    padding: 14px;
+}
+
+.active-cell {
+    border: 2.5px solid #2ecc71;
+}
+
+.cell-selected {
+    background: #eaebee;
+}
+
+.realtime-cell {
+    border: 2px solid blue;
+    position: relative;
+}
+
+.username-div {
+    color: blue;
+    position: absolute;
+    font-size: 10px;
+    left: 8rem;
+    top: 0.5rem;
+}
