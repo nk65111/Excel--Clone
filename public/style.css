@@ -251,3 +251,10 @@
     left: 8rem;
     top: 0.5rem;
 }
+
+.font-color input{
+    display: none ;
+}
+.cell-color input{
+    display: none;
+}

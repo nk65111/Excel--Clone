@@ -9,6 +9,9 @@ let left=document.querySelector(".left");
 let center=document.querySelector(".center");
 let right=document.querySelector(".right");
 
+
+let fontcolor=document.querySelector(".font-color"); 
+let cellcolor=document.querySelector(".cell-color");
 // menu.addEventListener("click",function(e){
 //    if(e.target.classList.contains("menu")){
 //        return;
@@ -91,3 +94,11 @@ function setTextAlignment(alignment,element){
   let cellObject=db[rowid][colid];
   cellObject.textAlign=alignment;
 }
+
+fontcolor.addEventListener("click",function(e){
+  document.querySelector(".font-color input").click();
+});
+
+cellcolor.addEventListener("click",function(e){
+  document.querySelector(".cell-color input").click();
+})
