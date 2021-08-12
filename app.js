@@ -6,7 +6,7 @@ const app = express();
 const http=require("http");
 const server = http.createServer(app);
 const io = new Server(server);
-
+const port=process.env.PORT || 3000;
 let userList=[];
 
 app.use(express.static("public"));
@@ -32,6 +32,6 @@ io.on('connection', function(socket){
    })
 })
 
-server.listen(3000, function () {
-        console.log("port 3000 listening");
+server.listen(port , function () {
+        // console.log("port 3000 listening");
 })
